@@ -26,8 +26,7 @@
 
 -(void)update:(ccTime)dt
 {
-    
-    // TODO: Make this use strategy
+    // TODO: Make use of strategy pattern
     CGPoint targetPoint = self.targetGo.position;
     CGPoint intermediatePoint = self.go.position;
     
@@ -37,6 +36,9 @@
     
     
     self.go.position = intermediatePoint;
+    
+    // Broadcast that a position update has happened!
+    [self.go send:@"update_position" from:self];
 }
 
 @end

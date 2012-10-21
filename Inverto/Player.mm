@@ -15,6 +15,7 @@
 @synthesize graphicsComponent = _graphicsComponent;
 @synthesize inputComponent = _inputComponent;
 @synthesize moverComponent = _moverComponent;
+@synthesize courierComponent = _courierComponent;
 
 -(id)initWithLevel:(CCLayer *)level
 {
@@ -22,9 +23,13 @@
     
     self.level = level;
     
-    _graphicsComponent = [[GraphicsComponent alloc] initWithGameObject:self];
-    _moverComponent = [[PlayerPhysicsMover alloc] initWithGameObject:self];
-    _inputComponent = [[InputComponent alloc] initWithGameObject:self];
+    self.graphicsComponent = [[GraphicsComponent alloc] initWithGameObject:self];
+    self.moverComponent = [[PlayerPhysicsMover alloc] initWithGameObject:self];
+    self.inputComponent = [[InputComponent alloc] initWithGameObject:self];
+    self.courierComponent = [[CourierComponent alloc] initWithGameObject:self];
+    
+    // Use Inverto dude as image!
+    self.graphicsComponent.sprite = [CCSprite spriteWithFile:@"dude.png"];
     
     return self;
 }
@@ -33,9 +38,10 @@
 {
     //NSLog(@"Player update");
     
-    [_inputComponent update:dt];
-    [_moverComponent update:dt];
-    [_graphicsComponent update:dt];
+    [self.inputComponent update:dt];
+    [self.moverComponent update:dt];
+    [self.graphicsComponent update:dt];
+    [self.courierComponent update:dt];
 }
 
 -(void) send:(NSString *)message from:(id)sender
@@ -43,10 +49,10 @@
     //NSLog(@"Player sent message: %@", message);
     
     // Send message to 
-    [_graphicsComponent receive:message from:sender];
-    [_moverComponent receive:message from:sender];
-    [_inputComponent receive:message from:sender];
-    
+    [self.graphicsComponent receive:message from:sender];
+    [self.moverComponent receive:message from:sender];
+    [self.inputComponent receive:message from:sender];
+    [self.courierComponent receive:message from:sender];
 }
 
 @end

@@ -136,4 +136,5 @@ dependencies: /Users/marcusstenbeck/Developer/Inverto/Inverto/Player.mm \
   Inverto/libs/Box2D/Dynamics/Joints/b2PulleyJoint.h \
   Inverto/libs/Box2D/Dynamics/Joints/b2RevoluteJoint.h \
   Inverto/libs/Box2D/Dynamics/Joints/b2RopeJoint.h \
-  Inverto/libs/Box2D/Dynamics/Joints/b2WeldJoint.h
+  Inverto/libs/Box2D/Dynamics/Joints/b2WeldJoint.h \
+  /Users/marcusstenbeck/Developer/Inverto/Inverto/CourierComponent.h

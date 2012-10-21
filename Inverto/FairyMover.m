@@ -6,8 +6,11 @@
 //  Copyright 2012 __MyCompanyName__. All rights reserved.
 //
 
+// TODO: This class translates rotation rate to input suitable for controls
+
 #import "FairyMover.h"
 #import "InputComponent.h"
+
 
 @implementation FairyMover
 
@@ -21,9 +24,9 @@
     
     CGSize s = [CCDirector sharedDirector].winSize;
     
-    CGPoint centerOfScreen = ccp(s.width/2, s.height/2);
+    _centerPoint = ccp(s.width/2, s.height/2);
     
-    self.go.position = centerOfScreen;
+    self.go.position = _centerPoint;
     
     return self;
 }
@@ -50,13 +53,10 @@
             
             CGPoint point = self.go.position;
             
-            CGSize s = [CCDirector sharedDirector].winSize;
-            CGPoint centerOfScreen = ccp(s.width/2, s.height/2);
+            double maxDistanceFromCenter = 100;
             
-            double maxDistanceFromCenter = 50;
-            
-            double xDist = point.x - centerOfScreen.x;
-            double yDist = point.y - centerOfScreen.y;
+            double xDist = point.x - _centerPoint.x;
+            double yDist = point.y - _centerPoint.y;
             
             if(abs(xDist) > maxDistanceFromCenter)
             {
@@ -75,6 +75,34 @@
             self.go.position = point;
         }
     }
+    
+
+    if( [message isEqualToString:@"player_update_position"] )
+    {
+        //NSLog(@"(%@) received \"%@\" from %@(%@)", self.go, message, sender, ((CCNode<GameComponent>*)sender).go);
+        
+        if( [sender conformsToProtocol:@protocol(GameComponent)] )
+        {
+            CCNode<GameComponent> *gc = (CCNode<GameComponent>*)sender;
+            
+            CGPoint delta = ccp(gc.go.position.x - _centerPoint.x, gc.go.position.y - _centerPoint.y);
+            
+            self.go.position = ccp(self.go.position.x + delta.x, self.go.position.y + delta.y);
+            
+            _centerPoint = gc.go.position;
+        }
+        
+    }
+}
+
+-(CGPoint)relativePosition
+{
+    CGPoint p;
+    
+    p.x = self.go.position.x - _centerPoint.x;
+    p.y = self.go.position.y - _centerPoint.y;
+    
+    return p;
 }
 
 -(void)jump

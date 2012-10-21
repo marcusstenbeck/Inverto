@@ -62,7 +62,7 @@
 	//		flags += b2Draw::e_jointBit;
 	//		flags += b2Draw::e_aabbBit;
 	//		flags += b2Draw::e_pairBit;
-	flags += b2Draw::e_centerOfMassBit;
+	//      flags += b2Draw::e_centerOfMassBit;
 	m_debugDraw->SetFlags(flags);
 
     
@@ -83,6 +83,7 @@
     edge.Set(b2Vec2(0, 0), b2Vec2(SCREEN_WIDTH / PTM_RATIO, 0));
     b2FixtureDef fixtureDef;
     fixtureDef.shape = &edge;
+    fixtureDef.friction = 0.2;
     
     // Create the fixture and attach it to the body
     roomBody->CreateFixture(&fixtureDef);
@@ -127,13 +128,25 @@
 		// Little bit of physics setup
         [self createPhysicsDemo];
         
-        NSLog(@"Player code start...");
+        NSLog(@"Player creation start...");
         // Little bit of player code
 		_player = [[Player alloc] initWithLevel:self];
-        NSLog(@"... add player sprite to layer...");
+        NSLog(@"... add Player sprite to layer...");
         [self addChild:_player.graphicsComponent.sprite];
         NSLog(@"... Player code end.");
         
+        
+        
+        NSLog(@"CameraTarget creation start...");
+        // Little bit of player code
+		_cameraTarget = [[Fairy alloc] initWithLevel:self];
+        NSLog(@"... add FollowerMover target...");
+        _cameraTarget.moverComponent.targetGo = _player;
+        NSLog(@"... add CameraTarget sprite to layer...");
+        _cameraTarget.graphicsComponent.sprite.opacity = 0;
+        [self addChild:_cameraTarget.graphicsComponent.sprite];
+        NSLog(@"... CameraTarget code end.");
+        [self runAction:[CCFollow actionWithTarget:_cameraTarget.graphicsComponent.sprite]];
         
         
         NSLog(@"FairyHelper creation start...");
@@ -150,11 +163,17 @@
 		_fairy = [[Fairy alloc] initWithLevel:self];
         NSLog(@"... add FollowerMover target...");
         _fairy.moverComponent.targetGo = _fairyHelper;
+        NSLog(@"... add Player's PlayerPhysicsMover as listener...");
+        [_fairy.courierComponent addListener:_player.moverComponent];
         NSLog(@"... add Fairy sprite to layer...");
+        _fairy.graphicsComponent.sprite = [CCSprite spriteWithFile:@"star.png"];
         [self addChild:_fairy.graphicsComponent.sprite];
         NSLog(@"... Fairy code end.");
         
         
+        
+        NSLog(@"... add FairyHelper's MoverComponent as listener...");
+        [_player.courierComponent addListener:_fairyHelper.moverComponent];
         
         
         [self scheduleUpdate];
@@ -173,6 +192,7 @@
     [_player update:dt];
     [_fairyHelper update:dt];
     [_fairy update:dt];
+    [_cameraTarget update:dt];
 }
 
 -(void) dealloc

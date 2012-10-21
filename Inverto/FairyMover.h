@@ -9,5 +9,10 @@
 #import "MoverComponent.h"
 
 @interface FairyMover : MoverComponent
+{
+    CGPoint _centerPoint;
+}
+
+-(CGPoint)relativePosition;
 
 @end

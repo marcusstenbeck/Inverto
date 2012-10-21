@@ -10,11 +10,13 @@
 #import "GraphicsComponent.h"
 #import "InputComponent.h"
 #import "PlayerPhysicsMover.h"
+#import "CourierComponent.h"
 
 @interface Player : CCNode<GameObject>
 
 @property (assign) GraphicsComponent* graphicsComponent;
 @property (assign) InputComponent* inputComponent;
 @property (assign) PlayerPhysicsMover* moverComponent;
+@property (assign) CourierComponent* courierComponent;
 
 @end

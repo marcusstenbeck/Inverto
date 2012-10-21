@@ -99,6 +99,6 @@ dependencies: /Users/marcusstenbeck/Developer/Inverto/Inverto/Fairy.m \
   /Users/marcusstenbeck/Developer/Inverto/Inverto/libs/cocos2d/Support/CCProfiling.h \
   Inverto/libs/kazmath/include/kazmath/GL/matrix.h \
   /Users/marcusstenbeck/Developer/Inverto/Inverto/GameObject.h \
-  /Users/marcusstenbeck/Developer/Inverto/Inverto/InputComponent.h \
   /Users/marcusstenbeck/Developer/Inverto/Inverto/FollowerMover.h \
-  /Users/marcusstenbeck/Developer/Inverto/Inverto/MoverComponent.h
+  /Users/marcusstenbeck/Developer/Inverto/Inverto/MoverComponent.h \
+  /Users/marcusstenbeck/Developer/Inverto/Inverto/CourierComponent.h

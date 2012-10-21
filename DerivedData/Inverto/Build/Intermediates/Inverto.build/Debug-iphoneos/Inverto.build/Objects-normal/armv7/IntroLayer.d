@@ -141,6 +141,7 @@ dependencies: \
   /Users/marcusstenbeck/Developer/Inverto/Inverto/InputComponent.h \
   /Users/marcusstenbeck/Developer/Inverto/Inverto/PlayerPhysicsMover.h \
   /Users/marcusstenbeck/Developer/Inverto/Inverto/MoverComponent.h \
+  /Users/marcusstenbeck/Developer/Inverto/Inverto/CourierComponent.h \
   /Users/marcusstenbeck/Developer/Inverto/Inverto/Fairy.h \
   /Users/marcusstenbeck/Developer/Inverto/Inverto/FollowerMover.h \
   /Users/marcusstenbeck/Developer/Inverto/Inverto/FairyHelper.h \

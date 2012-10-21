@@ -13,17 +13,21 @@
 
 @synthesize level = _level;
 
+@synthesize graphicsComponent = _graphicsComponent;
+@synthesize inputComponent = _inputComponent;
+@synthesize moverComponent = _moverComponent;
+
 -(id)initWithLevel:(CCLayer *)level
 {
     NSLog(@"Initialized FairyHelper object");
     
     self.level = level;
     
-    _graphicsComponent = [[GraphicsComponent alloc] initWithGameObject:self];
-    _moverComponent = [[FairyMover alloc] initWithGameObject:self];
-    _inputComponent = [[InputComponent alloc] initWithGameObject:self];
+    self.graphicsComponent = [[GraphicsComponent alloc] initWithGameObject:self];
+    self.moverComponent = [[FairyMover alloc] initWithGameObject:self];
+    self.inputComponent = [[InputComponent alloc] initWithGameObject:self];
     
-    _graphicsComponent.sprite.color = ccGREEN;
+    self.graphicsComponent.sprite.opacity = 0;
     
     return self;
 }
@@ -33,18 +37,18 @@
     //NSLog(@"FairyHelper sent message: %@", message);
     
     // Send message to
-    [_graphicsComponent receive:message from:sender];
-    [_moverComponent receive:message from:sender];
-    [_inputComponent receive:message from:sender];
+    [self.graphicsComponent receive:message from:sender];
+    [self.moverComponent receive:message from:sender];
+    [self.inputComponent receive:message from:sender];
 }
 
 -(void)update:(ccTime)dt
 {
     //NSLog(@"FairyHelper update");
     
-    [_inputComponent update:dt];
-    [_moverComponent update:dt];
-    [_graphicsComponent update:dt];
+    [self.inputComponent update:dt];
+    [self.moverComponent update:dt];
+    [self.graphicsComponent update:dt];
 }
 
 @end

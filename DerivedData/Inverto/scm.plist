@@ -3,9 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>FoundWorkingCopyPaths</key>
-	<array/>
+	<array>
+		<string>/Users/marcusstenbeck/Developer/Inverto</string>
+	</array>
 	<key>LastWorkingCopyScanDate</key>
-	<date>2012-10-20T17:08:00Z</date>
+	<date>2012-10-21T14:58:21Z</date>
 	<key>Version</key>
 	<integer>3</integer>
 </dict>

@@ -13,16 +13,21 @@
 
 @synthesize level = _level;
 
+@synthesize graphicsComponent = _graphicsComponent;
+@synthesize moverComponent = _moverComponent;
+@synthesize courierComponent = _courierComponent;
+
 -(id)initWithLevel:(CCLayer *)level
 {
     NSLog(@"Initialized Fairy class");
     
     self.level = level;
     
-    _graphicsComponent = [[GraphicsComponent alloc] initWithGameObject:self];
-    _moverComponent = [[FollowerMover alloc] initWithGameObject:self];
+    self.graphicsComponent = [[GraphicsComponent alloc] initWithGameObject:self];
+    self.moverComponent = [[FollowerMover alloc] initWithGameObject:self];
+    self.courierComponent = [[CourierComponent alloc] initWithGameObject:self];
     
-    _graphicsComponent.sprite.color = ccRED;
+    self.graphicsComponent.sprite.color = ccRED;
     
     return self;
 }
@@ -32,16 +37,18 @@
     //NSLog(@"Fairy sent message: %@", message);
     
     // Send message to
-    [_graphicsComponent receive:message from:sender];
-    [_moverComponent receive:message from:sender];
+    [self.courierComponent receive:message from:sender];
+    [self.graphicsComponent receive:message from:sender];
+    [self.moverComponent receive:message from:sender];
 }
 
 -(void)update:(ccTime)dt
 {
     //NSLog(@"Fairy update");
     
-    [_moverComponent update:dt];
-    [_graphicsComponent update:dt];
+    [self.moverComponent update:dt];
+    [self.graphicsComponent update:dt];
+    [self.courierComponent update:dt];
 }
 
 @end

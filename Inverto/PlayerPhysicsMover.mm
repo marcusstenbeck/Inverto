@@ -9,6 +9,7 @@
 #import "PlayerPhysicsMover.h"
 
 // Needed for level representation
+// TODO: Don't depend on HelloWorldLayer!
 #import "HelloWorldLayer.h"
 
 // TODO: Get PTM_RATIO elsewhere
@@ -31,17 +32,18 @@
 	b2BodyDef bodyDef;
 	bodyDef.type = b2_dynamicBody;
 	bodyDef.position.Set(s.width / (2*PTM_RATIO), s.height / (2*PTM_RATIO));
+    bodyDef.fixedRotation = YES;
 	b2Body *body = pWorld->CreateBody(&bodyDef);
 	
 	// Define another box shape for our dynamic body.
-	b2PolygonShape dynamicBox;
-	dynamicBox.SetAsBox(.5f, .5f);//These are mid points for our 1m box
+	b2CircleShape dynamicCircle;
+	dynamicCircle.m_radius = 0.5;
 	
 	// Define the dynamic body fixture.
     b2FixtureDef fixtureDef;
-	fixtureDef.shape = &dynamicBox;
+	fixtureDef.shape = &dynamicCircle;
 	fixtureDef.density = 1.0f;
-	fixtureDef.friction = 0.3f;
+	fixtureDef.friction = 7.f;
 	body->CreateFixture(&fixtureDef);
     
     // Set physics body in player mover component
@@ -69,11 +71,13 @@
         
         // Update position in game object
         self.go.position = ccp(pos.x, pos.y);
-        self.go.rotation = -1 * CC_RADIANS_TO_DEGREES(_pBody->GetAngle());;
+        self.go.rotation = -1 * CC_RADIANS_TO_DEGREES(_pBody->GetAngle());
+        
+        [self.go send:@"player_update_position" from:self];
     }
 }
 
--(void)receive:(NSString *)message
+-(void)receive:(NSString *)message from:(id)sender
 {
     //NSLog(@"MoverComponent: received message: %@", message);
     
@@ -81,11 +85,31 @@
     {
         [self jump];
     }
+    
+    // TODO: Program to interface instead
+    if( [message isEqualToString:@"update_position"] )
+    {
+        //NSLog(@"PlayerPhysicsMover(%@) received \"%@\" from %@(%@)", self.go, message, sender, ((CCNode<GameComponent>*)sender).go);
+        
+        if( [sender conformsToProtocol:@protocol(GameComponent)] )
+        {
+            CCNode<GameComponent> *gc = (CCNode<GameComponent>*)sender;
+            
+            double xImpulse = (gc.go.position.x - self.go.position.x) / 200.0;
+
+            //NSLog(@"(%@): xImpulse = (%f, %f)", self, gc.go.position.x, gc.go.position.y);
+            b2Vec2 playerVel = _pBody->GetLinearVelocity();
+            
+            if(playerVel.Length() < 8.0 || (playerVel.x * xImpulse) < 0.0)
+                _pBody->ApplyLinearImpulse(b2Vec2(xImpulse, 0), _pBody->GetPosition());
+        }
+        
+    }
 }
 
 -(void)jump
 {
-    _pBody->ApplyLinearImpulse(b2Vec2(0, 1.0), _pBody->GetPosition());
+    _pBody->ApplyLinearImpulse(b2Vec2(0, 7.0), _pBody->GetPosition());
 }
 
 @end

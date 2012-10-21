@@ -7,13 +7,13 @@
 //
 
 #import "GraphicsComponent.h"
-#import "InputComponent.h"
 #import "FollowerMover.h"
+#import "CourierComponent.h"
 
 @interface Fairy : CCNode<GameObject>
 
-@property (assign) GraphicsComponent* graphicsComponent;
-@property (assign) InputComponent* inputComponent;
-@property (assign) FollowerMover* moverComponent;
+@property (assign) GraphicsComponent *graphicsComponent;
+@property (assign) FollowerMover *moverComponent;
+@property (assign) CourierComponent *courierComponent;
 
 @end

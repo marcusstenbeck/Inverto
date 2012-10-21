@@ -35,6 +35,7 @@
 	Player* _player;
     Fairy* _fairy;
     FairyHelper* _fairyHelper;
+    Fairy* _cameraTarget;
     
     GLESDebugDraw *m_debugDraw;		// strong ref
 }

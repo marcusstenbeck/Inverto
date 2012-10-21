@@ -6,11 +6,16 @@
 //  Copyright 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "cocos2d.h"
+#import "GameComponent.h"
 
-@interface CourierComponent : GameComponent {
-    
-}
+
+@interface CourierComponent : CCNode<GameComponent>
+
+@property (strong) NSArray *listeners;
+
+
+-(void)addListener:(CCNode<GameComponent>*)listener;
+
+-(void)notifyListeners:(NSString*)message from:(CCNode<GameComponent>*)sender;
 
 @end
