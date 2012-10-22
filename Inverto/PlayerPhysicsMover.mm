@@ -32,7 +32,9 @@
 	b2BodyDef bodyDef;
 	bodyDef.type = b2_dynamicBody;
 	bodyDef.position.Set(s.width / (2*PTM_RATIO), s.height / (2*PTM_RATIO));
-    bodyDef.fixedRotation = YES;
+//    bodyDef.linearDamping = .5f;
+    bodyDef.angularDamping = 1.f;
+//    bodyDef.fixedRotation = YES;
 	b2Body *body = pWorld->CreateBody(&bodyDef);
 	
 	// Define another box shape for our dynamic body.
@@ -42,8 +44,8 @@
 	// Define the dynamic body fixture.
     b2FixtureDef fixtureDef;
 	fixtureDef.shape = &dynamicCircle;
-	fixtureDef.density = 1.0f;
-	fixtureDef.friction = 7.f;
+	fixtureDef.density = 1.f;
+	fixtureDef.friction = 10.f;
 	body->CreateFixture(&fixtureDef);
     
     // Set physics body in player mover component
@@ -95,13 +97,22 @@
         {
             CCNode<GameComponent> *gc = (CCNode<GameComponent>*)sender;
             
-            double xImpulse = (gc.go.position.x - self.go.position.x) / 200.0;
+            
 
             //NSLog(@"(%@): xImpulse = (%f, %f)", self, gc.go.position.x, gc.go.position.y);
-            b2Vec2 playerVel = _pBody->GetLinearVelocity();
+            b2Vec2 linearVelocity = _pBody->GetLinearVelocity();
+            double angularVelocity = _pBody->GetAngularVelocity();
             
-            if(playerVel.Length() < 8.0 || (playerVel.x * xImpulse) < 0.0)
-                _pBody->ApplyLinearImpulse(b2Vec2(xImpulse, 0), _pBody->GetPosition());
+            // TODO: Move damping value to a better place
+            double arbVal = (gc.go.position.x - self.go.position.x) / 8.0;
+            arbVal = arbVal*arbVal < 1.f ? linearVelocity.x /1.2f : arbVal;
+            
+            _pBody->SetLinearVelocity(b2Vec2(arbVal, linearVelocity.y));
+            
+            /*
+            if(sqrt(angularVelocity * angularVelocity) < 8.0 || (angularVelocity * -torque) < 0.0)
+                _pBody->ApplyTorque(-torque);
+             */
         }
         
     }

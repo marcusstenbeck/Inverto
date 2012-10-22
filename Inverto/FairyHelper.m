@@ -17,7 +17,7 @@
 @synthesize inputComponent = _inputComponent;
 @synthesize moverComponent = _moverComponent;
 
--(id)initWithLevel:(CCLayer *)level
+-(id)initWithLevel:(HelloWorldLayer *)level
 {
     NSLog(@"Initialized FairyHelper object");
     

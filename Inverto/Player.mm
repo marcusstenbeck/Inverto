@@ -17,7 +17,7 @@
 @synthesize moverComponent = _moverComponent;
 @synthesize courierComponent = _courierComponent;
 
--(id)initWithLevel:(CCLayer *)level
+-(id)initWithLevel:(HelloWorldLayer *)level
 {
     NSLog(@"Initialized Player class");
     

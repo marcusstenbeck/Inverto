@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/marcusstenbeck/Developer/Inverto/Inverto/FairyMover.m \
+  /Users/marcusstenbeck/Developer/Inverto/Inverto/FairyMover.mm \
   /Users/marcusstenbeck/Developer/Inverto/Inverto/FairyMover.h \
   /Users/marcusstenbeck/Developer/Inverto/Inverto/MoverComponent.h \
   /Users/marcusstenbeck/Developer/Inverto/Inverto/GameComponent.h \
@@ -100,4 +100,50 @@ dependencies: \
   /Users/marcusstenbeck/Developer/Inverto/Inverto/libs/cocos2d/Support/CCProfiling.h \
   Inverto/libs/kazmath/include/kazmath/GL/matrix.h \
   /Users/marcusstenbeck/Developer/Inverto/Inverto/GameObject.h \
-  /Users/marcusstenbeck/Developer/Inverto/Inverto/InputComponent.h
+  /Users/marcusstenbeck/Developer/Inverto/Inverto/InputComponent.h \
+  /Users/marcusstenbeck/Developer/Inverto/Inverto/HelloWorldLayer.h \
+  /Users/marcusstenbeck/Developer/Inverto/Inverto/libs/Box2D/Box2D.h \
+  Inverto/libs/Box2D/Common/b2Settings.h \
+  Inverto/libs/Box2D/Common/b2Draw.h Inverto/libs/Box2D/Common/b2Math.h \
+  Inverto/libs/Box2D/Common/b2Timer.h \
+  Inverto/libs/Box2D/Collision/Shapes/b2CircleShape.h \
+  Inverto/libs/Box2D/Collision/Shapes/b2Shape.h \
+  Inverto/libs/Box2D/Common/b2BlockAllocator.h \
+  Inverto/libs/Box2D/Collision/b2Collision.h \
+  Inverto/libs/Box2D/Collision/Shapes/b2EdgeShape.h \
+  Inverto/libs/Box2D/Collision/Shapes/b2ChainShape.h \
+  Inverto/libs/Box2D/Collision/Shapes/b2PolygonShape.h \
+  Inverto/libs/Box2D/Collision/b2BroadPhase.h \
+  Inverto/libs/Box2D/Collision/b2DynamicTree.h \
+  Inverto/libs/Box2D/Common/b2GrowableStack.h \
+  Inverto/libs/Box2D/Collision/b2Distance.h \
+  Inverto/libs/Box2D/Collision/b2TimeOfImpact.h \
+  Inverto/libs/Box2D/Dynamics/b2Body.h \
+  Inverto/libs/Box2D/Dynamics/b2Fixture.h \
+  Inverto/libs/Box2D/Dynamics/b2WorldCallbacks.h \
+  Inverto/libs/Box2D/Dynamics/b2TimeStep.h \
+  Inverto/libs/Box2D/Dynamics/b2World.h \
+  Inverto/libs/Box2D/Common/b2StackAllocator.h \
+  Inverto/libs/Box2D/Dynamics/b2ContactManager.h \
+  Inverto/libs/Box2D/Dynamics/Contacts/b2Contact.h \
+  Inverto/libs/Box2D/Dynamics/Joints/b2DistanceJoint.h \
+  Inverto/libs/Box2D/Dynamics/Joints/b2Joint.h \
+  Inverto/libs/Box2D/Dynamics/Joints/b2FrictionJoint.h \
+  Inverto/libs/Box2D/Dynamics/Joints/b2GearJoint.h \
+  Inverto/libs/Box2D/Dynamics/Joints/b2WheelJoint.h \
+  Inverto/libs/Box2D/Dynamics/Joints/b2MouseJoint.h \
+  Inverto/libs/Box2D/Dynamics/Joints/b2PrismaticJoint.h \
+  Inverto/libs/Box2D/Dynamics/Joints/b2PulleyJoint.h \
+  Inverto/libs/Box2D/Dynamics/Joints/b2RevoluteJoint.h \
+  Inverto/libs/Box2D/Dynamics/Joints/b2RopeJoint.h \
+  Inverto/libs/Box2D/Dynamics/Joints/b2WeldJoint.h \
+  /Users/marcusstenbeck/Developer/Inverto/Inverto/GLES-Render.h \
+  /Users/marcusstenbeck/Developer/Inverto/Inverto/Player.h \
+  /Users/marcusstenbeck/Developer/Inverto/Inverto/GraphicsComponent.h \
+  /Users/marcusstenbeck/Developer/Inverto/Inverto/PlayerPhysicsMover.h \
+  /Users/marcusstenbeck/Developer/Inverto/Inverto/CourierComponent.h \
+  /Users/marcusstenbeck/Developer/Inverto/Inverto/Fairy.h \
+  /Users/marcusstenbeck/Developer/Inverto/Inverto/FollowerMover.h \
+  /Users/marcusstenbeck/Developer/Inverto/Inverto/FairyHelper.h \
+  /Users/marcusstenbeck/Developer/Inverto/Inverto/Obstacle.h \
+  /Users/marcusstenbeck/Developer/Inverto/Inverto/PhysicsComponent.h

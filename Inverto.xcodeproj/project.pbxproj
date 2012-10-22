@@ -180,19 +180,25 @@
 		A7619CB0162DA11F00840476 /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = A7619CAF162DA11F00840476 /* HelloWorldLayer.mm */; };
 		A7619CB6162DA11F00840476 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = A7619CB5162DA11F00840476 /* GLES-Render.mm */; };
 		A7619CBB162DA11F00840476 /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = A7619CBA162DA11F00840476 /* blocks.png */; };
-		A773E7671631A58A0018B888 /* InputComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = A773E7661631A58A0018B888 /* InputComponent.m */; };
+		A773E7671631A58A0018B888 /* InputComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = A773E7661631A58A0018B888 /* InputComponent.mm */; };
 		A780498C162EF5C800A946C8 /* Player.mm in Sources */ = {isa = PBXBuildFile; fileRef = A780498B162EF5C700A946C8 /* Player.mm */; };
 		A780498F162EFB7800A946C8 /* GraphicsComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = A780498E162EFB7800A946C8 /* GraphicsComponent.mm */; };
 		A79A9A051632802900DA0777 /* PlayerPhysicsMover.mm in Sources */ = {isa = PBXBuildFile; fileRef = A79A9A041632802900DA0777 /* PlayerPhysicsMover.mm */; };
 		A79A9C4E163290E100DA0777 /* MoverComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A9C4D163290E100DA0777 /* MoverComponent.m */; };
 		A79A9C551632D17400DA0777 /* Fairy.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A9C541632D17400DA0777 /* Fairy.m */; };
 		A79A9C581632D70700DA0777 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79A9C571632D70700DA0777 /* CoreMotion.framework */; };
-		A79A9C5B1632DD4100DA0777 /* FairyMover.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A9C5A1632DD4000DA0777 /* FairyMover.m */; };
+		A79A9C5B1632DD4100DA0777 /* FairyMover.mm in Sources */ = {isa = PBXBuildFile; fileRef = A79A9C5A1632DD4000DA0777 /* FairyMover.mm */; };
 		A79A9C5E1633116900DA0777 /* FairyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A9C5D1633116800DA0777 /* FairyHelper.m */; };
 		A79A9C61163311EE00DA0777 /* FollowerMover.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A9C60163311EE00DA0777 /* FollowerMover.m */; };
 		A7DAC87216340C4D003142B7 /* dude.png in Resources */ = {isa = PBXBuildFile; fileRef = A7DAC87116340C4D003142B7 /* dude.png */; };
 		A7DAC876163417C6003142B7 /* CourierComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DAC875163417C5003142B7 /* CourierComponent.m */; };
 		A7DAC8781634450C003142B7 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = A7DAC8771634450C003142B7 /* star.png */; };
+		A7DAC87B163585CC003142B7 /* Obstacle.mm in Sources */ = {isa = PBXBuildFile; fileRef = A7DAC87A163585CB003142B7 /* Obstacle.mm */; };
+		A7DAC88016358987003142B7 /* PhysicsComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = A7DAC87F16358986003142B7 /* PhysicsComponent.mm */; };
+		A7DAC88516359101003142B7 /* 1m-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = A7DAC88116359101003142B7 /* 1m-hd.png */; };
+		A7DAC88616359101003142B7 /* 1m.png in Resources */ = {isa = PBXBuildFile; fileRef = A7DAC88216359101003142B7 /* 1m.png */; };
+		A7DAC88716359101003142B7 /* d5m-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = A7DAC88316359101003142B7 /* d5m-hd.png */; };
+		A7DAC88816359101003142B7 /* d5m.png in Resources */ = {isa = PBXBuildFile; fileRef = A7DAC88416359101003142B7 /* d5m.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -556,7 +562,7 @@
 		A7619CB5162DA11F00840476 /* GLES-Render.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "GLES-Render.mm"; sourceTree = "<group>"; };
 		A7619CBA162DA11F00840476 /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
 		A773E7651631A58A0018B888 /* InputComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputComponent.h; sourceTree = "<group>"; };
-		A773E7661631A58A0018B888 /* InputComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputComponent.m; sourceTree = "<group>"; };
+		A773E7661631A58A0018B888 /* InputComponent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = InputComponent.mm; sourceTree = "<group>"; };
 		A773E7681631B1B10018B888 /* MoverComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoverComponent.h; sourceTree = "<group>"; };
 		A7804984162EF33B00A946C8 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
 		A7804987162EF35B00A946C8 /* GameComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameComponent.h; sourceTree = "<group>"; };
@@ -571,7 +577,7 @@
 		A79A9C541632D17400DA0777 /* Fairy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fairy.m; sourceTree = "<group>"; };
 		A79A9C571632D70700DA0777 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		A79A9C591632DD4000DA0777 /* FairyMover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FairyMover.h; sourceTree = "<group>"; };
-		A79A9C5A1632DD4000DA0777 /* FairyMover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FairyMover.m; sourceTree = "<group>"; };
+		A79A9C5A1632DD4000DA0777 /* FairyMover.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FairyMover.mm; sourceTree = "<group>"; };
 		A79A9C5C1633116800DA0777 /* FairyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FairyHelper.h; sourceTree = "<group>"; };
 		A79A9C5D1633116800DA0777 /* FairyHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FairyHelper.m; sourceTree = "<group>"; };
 		A79A9C5F163311ED00DA0777 /* FollowerMover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowerMover.h; sourceTree = "<group>"; };
@@ -580,6 +586,14 @@
 		A7DAC874163417C5003142B7 /* CourierComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourierComponent.h; sourceTree = "<group>"; };
 		A7DAC875163417C5003142B7 /* CourierComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourierComponent.m; sourceTree = "<group>"; };
 		A7DAC8771634450C003142B7 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = Resources/star.png; sourceTree = "<group>"; };
+		A7DAC879163585CB003142B7 /* Obstacle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Obstacle.h; sourceTree = "<group>"; };
+		A7DAC87A163585CB003142B7 /* Obstacle.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Obstacle.mm; sourceTree = "<group>"; };
+		A7DAC87C163587FB003142B7 /* PhysicsComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicsComponent.h; sourceTree = "<group>"; };
+		A7DAC87F16358986003142B7 /* PhysicsComponent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PhysicsComponent.mm; sourceTree = "<group>"; };
+		A7DAC88116359101003142B7 /* 1m-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1m-hd.png"; path = "Resources/1m-hd.png"; sourceTree = "<group>"; };
+		A7DAC88216359101003142B7 /* 1m.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1m.png; path = Resources/1m.png; sourceTree = "<group>"; };
+		A7DAC88316359101003142B7 /* d5m-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "d5m-hd.png"; path = "Resources/d5m-hd.png"; sourceTree = "<group>"; };
+		A7DAC88416359101003142B7 /* d5m.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = d5m.png; path = Resources/d5m.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -656,12 +670,14 @@
 				A79A9C4D163290E100DA0777 /* MoverComponent.m */,
 				A79A9A031632802900DA0777 /* PlayerPhysicsMover.h */,
 				A79A9A041632802900DA0777 /* PlayerPhysicsMover.mm */,
+				A7DAC87C163587FB003142B7 /* PhysicsComponent.h */,
+				A7DAC87F16358986003142B7 /* PhysicsComponent.mm */,
 				A79A9C591632DD4000DA0777 /* FairyMover.h */,
-				A79A9C5A1632DD4000DA0777 /* FairyMover.m */,
+				A79A9C5A1632DD4000DA0777 /* FairyMover.mm */,
 				A79A9C5F163311ED00DA0777 /* FollowerMover.h */,
 				A79A9C60163311EE00DA0777 /* FollowerMover.m */,
 				A773E7651631A58A0018B888 /* InputComponent.h */,
-				A773E7661631A58A0018B888 /* InputComponent.m */,
+				A773E7661631A58A0018B888 /* InputComponent.mm */,
 				A7DAC874163417C5003142B7 /* CourierComponent.h */,
 				A7DAC875163417C5003142B7 /* CourierComponent.m */,
 				A780498D162EFB7800A946C8 /* GraphicsComponent.h */,
@@ -673,6 +689,8 @@
 				A79A9C5D1633116800DA0777 /* FairyHelper.m */,
 				A780498A162EF5C700A946C8 /* Player.h */,
 				A780498B162EF5C700A946C8 /* Player.mm */,
+				A7DAC879163585CB003142B7 /* Obstacle.h */,
+				A7DAC87A163585CB003142B7 /* Obstacle.mm */,
 			);
 			path = Inverto;
 			sourceTree = "<group>";
@@ -680,6 +698,10 @@
 		A7619AA1162DA11900840476 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A7DAC88116359101003142B7 /* 1m-hd.png */,
+				A7DAC88216359101003142B7 /* 1m.png */,
+				A7DAC88316359101003142B7 /* d5m-hd.png */,
+				A7DAC88416359101003142B7 /* d5m.png */,
 				A7DAC8771634450C003142B7 /* star.png */,
 				A7DAC87116340C4D003142B7 /* dude.png */,
 				A7619AA2162DA11900840476 /* Default.png */,
@@ -1267,6 +1289,10 @@
 				A7619CBB162DA11F00840476 /* blocks.png in Resources */,
 				A7DAC87216340C4D003142B7 /* dude.png in Resources */,
 				A7DAC8781634450C003142B7 /* star.png in Resources */,
+				A7DAC88516359101003142B7 /* 1m-hd.png in Resources */,
+				A7DAC88616359101003142B7 /* 1m.png in Resources */,
+				A7DAC88716359101003142B7 /* d5m-hd.png in Resources */,
+				A7DAC88816359101003142B7 /* d5m.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1429,14 +1455,16 @@
 				A7413816162DABBD00059DC8 /* IntroLayer.mm in Sources */,
 				A780498C162EF5C800A946C8 /* Player.mm in Sources */,
 				A780498F162EFB7800A946C8 /* GraphicsComponent.mm in Sources */,
-				A773E7671631A58A0018B888 /* InputComponent.m in Sources */,
+				A773E7671631A58A0018B888 /* InputComponent.mm in Sources */,
 				A79A9A051632802900DA0777 /* PlayerPhysicsMover.mm in Sources */,
 				A79A9C4E163290E100DA0777 /* MoverComponent.m in Sources */,
 				A79A9C551632D17400DA0777 /* Fairy.m in Sources */,
-				A79A9C5B1632DD4100DA0777 /* FairyMover.m in Sources */,
+				A79A9C5B1632DD4100DA0777 /* FairyMover.mm in Sources */,
 				A79A9C5E1633116900DA0777 /* FairyHelper.m in Sources */,
 				A79A9C61163311EE00DA0777 /* FollowerMover.m in Sources */,
 				A7DAC876163417C6003142B7 /* CourierComponent.m in Sources */,
+				A7DAC87B163585CC003142B7 /* Obstacle.mm in Sources */,
+				A7DAC88016358987003142B7 /* PhysicsComponent.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

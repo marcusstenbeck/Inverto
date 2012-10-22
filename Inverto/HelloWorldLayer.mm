@@ -33,6 +33,16 @@
 	return scene;
 }
 
+-(void)receive:(NSString *)message from:(id)sender
+{
+    NSLog(@"(%@): Received message \"%@\" from %@", self, message, sender);
+    
+    if( [message isEqualToString:@"player_invert"] )
+    {
+        _inverted = _inverted ? NO : YES;
+    }
+}
+
 - (void)ccTouchesBegan:(NSSet*)touches withEvent:(UIEvent*)event
 {
     //UITouch* touch = [touches anyObject];
@@ -125,6 +135,13 @@
     {
         self.isTouchEnabled = YES;
         
+        _inverted = NO;
+        
+        _invertedLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"_inverted: %d", _inverted] fontName:@"Marker Felt" fontSize:16];
+        [self addChild:_invertedLabel];
+        [_invertedLabel setColor:ccc3(127,127,127)];
+        _invertedLabel.position = ccp(self.position.x, self.position.y);
+        
 		// Little bit of physics setup
         [self createPhysicsDemo];
         
@@ -170,11 +187,26 @@
         [self addChild:_fairy.graphicsComponent.sprite];
         NSLog(@"... Fairy code end.");
         
+    
+        
+        
+        
+        NSLog(@"Obstacle creation start...");
+        // Little bit of player code
+		_obstacle = [[Obstacle alloc] initWithLevel:self];
+        _obstacle.position = ccp(100, 100);
+        NSLog(@"... add Obstacle sprite to layer...");
+        [self addChild:_obstacle.graphicsComponent.sprite];
+        NSLog(@"... Obstacle code end.");
+        
+        
+        
         
         
         NSLog(@"... add FairyHelper's MoverComponent as listener...");
         [_player.courierComponent addListener:_fairyHelper.moverComponent];
         
+    
         
         [self scheduleUpdate];
 	}
@@ -187,12 +219,17 @@
     self.pWorld->Step(dt, 10, 10);
     self.pWorld->DrawDebugData();
     
+    // Update inverted label
+    _invertedLabel.string = [NSString stringWithFormat:[NSString stringWithFormat:@"_inverted: %d", _inverted]];
+    _invertedLabel.position = ccp(-self.position.x + 100, -self.position.y + 100);
+    
     // Update the game objects
     // TODO: Update automatically from an array
     [_player update:dt];
     [_fairyHelper update:dt];
     [_fairy update:dt];
     [_cameraTarget update:dt];
+    [_obstacle update:dt];
 }
 
 -(void) dealloc

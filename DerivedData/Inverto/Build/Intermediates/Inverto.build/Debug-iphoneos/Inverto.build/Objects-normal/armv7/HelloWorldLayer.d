@@ -145,4 +145,6 @@ dependencies: \
   /Users/marcusstenbeck/Developer/Inverto/Inverto/FollowerMover.h \
   /Users/marcusstenbeck/Developer/Inverto/Inverto/FairyHelper.h \
   /Users/marcusstenbeck/Developer/Inverto/Inverto/FairyMover.h \
+  /Users/marcusstenbeck/Developer/Inverto/Inverto/Obstacle.h \
+  /Users/marcusstenbeck/Developer/Inverto/Inverto/PhysicsComponent.h \
   /Users/marcusstenbeck/Developer/Inverto/Inverto/AppDelegate.h

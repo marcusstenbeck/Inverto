@@ -18,6 +18,7 @@
 #import "Player.h"
 #import "Fairy.h"
 #import "FairyHelper.h"
+#import "Obstacle.h"
 
 //Pixel to metres ratio. Box2D uses metres as the unit for measurement.
 //This ratio defines how many pixels correspond to 1 Box2D "metre"
@@ -36,6 +37,10 @@
     Fairy* _fairy;
     FairyHelper* _fairyHelper;
     Fairy* _cameraTarget;
+    Obstacle *_obstacle;
+    
+    CCLabelTTF *_invertedLabel;
+    BOOL _inverted;
     
     GLESDebugDraw *m_debugDraw;		// strong ref
 }
@@ -44,5 +49,7 @@
 
 // returns a CCScene that contains the HelloWorldLayer as the only child
 +(CCScene *) scene;
+
+-(void)receive:(NSString *)message from:(id)sender;
 
 @end
