@@ -25,8 +25,8 @@
     self.graphicsComponent = [[GraphicsComponent alloc] initWithGameObject:self];
     self.physicsComponent = [[PhysicsComponent alloc] initWithGameObject:self];
     
-    // Use Inverto dude as image!
-    self.graphicsComponent.sprite = [CCSprite spriteWithFile:@"d5m.png"];
+    // Use rock as image
+    self.graphicsComponent.sprite = [CCSprite spriteWithFile:@"block.png"];
     
     return self;
 }

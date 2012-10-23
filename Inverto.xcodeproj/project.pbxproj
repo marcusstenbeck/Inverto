@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A727BECC1636BAB800049B52 /* level1.xml in Resources */ = {isa = PBXBuildFile; fileRef = A727BEC81636BAB800049B52 /* level1.xml */; };
+		A727BECD1636BAB800049B52 /* block-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = A727BECA1636BAB800049B52 /* block-hd.png */; };
+		A727BECE1636BAB800049B52 /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = A727BECB1636BAB800049B52 /* block.png */; };
 		A7413816162DABBD00059DC8 /* IntroLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = A7413815162DABBD00059DC8 /* IntroLayer.mm */; };
 		A7619A8F162DA11900840476 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7619A8E162DA11900840476 /* QuartzCore.framework */; };
 		A7619A91162DA11900840476 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7619A90162DA11900840476 /* OpenGLES.framework */; };
@@ -202,6 +205,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A727BEC81636BAB800049B52 /* level1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level1.xml; sourceTree = "<group>"; };
+		A727BECA1636BAB800049B52 /* block-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block-hd.png"; sourceTree = "<group>"; };
+		A727BECB1636BAB800049B52 /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
 		A7413814162DABBD00059DC8 /* IntroLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		A7413815162DABBD00059DC8 /* IntroLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IntroLayer.mm; sourceTree = "<group>"; };
 		A7619A8A162DA11900840476 /* Inverto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inverto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -617,6 +623,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A727BEC51636BAB800049B52 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A727BEC61636BAB800049B52 /* Inverto v1 */,
+			);
+			name = Assets;
+			path = Resources/Assets;
+			sourceTree = "<group>";
+		};
+		A727BEC61636BAB800049B52 /* Inverto v1 */ = {
+			isa = PBXGroup;
+			children = (
+				A727BEC71636BAB800049B52 /* Levels */,
+				A727BEC91636BAB800049B52 /* Sprites */,
+			);
+			path = "Inverto v1";
+			sourceTree = "<group>";
+		};
+		A727BEC71636BAB800049B52 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				A727BEC81636BAB800049B52 /* level1.xml */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+		A727BEC91636BAB800049B52 /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				A727BECA1636BAB800049B52 /* block-hd.png */,
+				A727BECB1636BAB800049B52 /* block.png */,
+			);
+			path = Sprites;
+			sourceTree = "<group>";
+		};
 		A7619A7F162DA11900840476 = {
 			isa = PBXGroup;
 			children = (
@@ -698,6 +739,7 @@
 		A7619AA1162DA11900840476 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A727BEC51636BAB800049B52 /* Assets */,
 				A7DAC88116359101003142B7 /* 1m-hd.png */,
 				A7DAC88216359101003142B7 /* 1m.png */,
 				A7DAC88316359101003142B7 /* d5m-hd.png */,
@@ -1293,6 +1335,9 @@
 				A7DAC88616359101003142B7 /* 1m.png in Resources */,
 				A7DAC88716359101003142B7 /* d5m-hd.png in Resources */,
 				A7DAC88816359101003142B7 /* d5m.png in Resources */,
+				A727BECC1636BAB800049B52 /* level1.xml in Resources */,
+				A727BECD1636BAB800049B52 /* block-hd.png in Resources */,
+				A727BECE1636BAB800049B52 /* block.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
