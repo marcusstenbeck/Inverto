@@ -37,6 +37,8 @@
     
     self.sprite.position = self.go.position;
     self.sprite.rotation = self.go.rotation;
+    self.sprite.scaleX = self.go.scaleX;
+//    self.sprite.scaleY = self.go.scaleY;
     
     // Test messaging system
     //[self.go send:@"I'm a GraphicsComponent, and I just performed an update!"];

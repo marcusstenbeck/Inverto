@@ -9,7 +9,7 @@
 #import "InputComponent.h"
 
 // Imported to send messages to HelloWorldLayer
-#import "HelloWorldLayer.h"
+#import "LevelLayer.h"
 
 @implementation InputComponent
 

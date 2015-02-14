@@ -14,7 +14,7 @@
 
 // Needed for level representation
 // TODO: Don't depend on HelloWorldLayer!
-#import "HelloWorldLayer.h"
+#import "LevelLayer.h"
 
 
 @implementation FairyMover

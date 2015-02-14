@@ -17,7 +17,7 @@
 @synthesize moverComponent = _moverComponent;
 @synthesize courierComponent = _courierComponent;
 
--(id)initWithLevel:(HelloWorldLayer *)level
+-(id)initWithLevel:(LevelLayer *)level
 {
     NSLog(@"Initialized Fairy class");
     

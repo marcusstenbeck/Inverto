@@ -17,7 +17,7 @@
 @synthesize moverComponent = _moverComponent;
 @synthesize courierComponent = _courierComponent;
 
--(id)initWithLevel:(HelloWorldLayer *)level
+-(id)initWithLevel:(LevelLayer *)level
 {
     NSLog(@"Initialized Player class");
     
@@ -29,7 +29,7 @@
     self.courierComponent = [[CourierComponent alloc] initWithGameObject:self];
     
     // Use Inverto dude as image!
-    self.graphicsComponent.sprite = [CCSprite spriteWithFile:@"dude.png"];
+    self.graphicsComponent.sprite = [CCSprite spriteWithFile:@"inverto.png"];
     
     return self;
 }

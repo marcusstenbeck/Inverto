@@ -9,7 +9,8 @@
 
 // Import the interfaces
 #import "IntroLayer.h"
-#import "HelloWorldLayer.h"
+#import "LevelLayer.h"
+#import "LevelBuilder.h"
 
 
 #pragma mark - IntroLayer
@@ -60,6 +61,8 @@
 
 -(void) makeTransition:(ccTime)dt
 {
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:[HelloWorldLayer scene] withColor:ccWHITE]];
+    LevelLayer *level = [LevelBuilder createLevel:@"level1.xml"];
+    
+	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:[level scene] withColor:ccWHITE]];
 }
 @end

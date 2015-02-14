@@ -11,15 +11,15 @@
 // TODO: Send method to make sure we can message all our components!
 
 // In order to specify type
-@class HelloWorldLayer;
+@class LevelLayer;
 
 @protocol GameObject
 
 // TODO: Change to platform agnostic level representation
-@property (assign) HelloWorldLayer *level;
+@property (assign) LevelLayer *level;
 
 @required
--(id)initWithLevel:(HelloWorldLayer *)level;
+-(id)initWithLevel:(LevelLayer *)level;
 
 -(void) update:(ccTime)dt;
 

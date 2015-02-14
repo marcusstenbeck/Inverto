@@ -7,9 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A720F7671636D38100C93E10 /* LevelBuilder.mm in Sources */ = {isa = PBXBuildFile; fileRef = A720F7661636D38100C93E10 /* LevelBuilder.mm */; };
+		A720F76B1636D3D800C93E10 /* LevelLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = A720F76A1636D3D800C93E10 /* LevelLayer.mm */; };
+		A720F76F1637D7F200C93E10 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = A720F76E1637D7F200C93E10 /* XMLReader.m */; };
+		A720F7721637F7A500C93E10 /* ShortRamp.mm in Sources */ = {isa = PBXBuildFile; fileRef = A720F7711637F7A500C93E10 /* ShortRamp.mm */; };
+		A720F7751637FA9D00C93E10 /* MediumRamp.mm in Sources */ = {isa = PBXBuildFile; fileRef = A720F7741637FA9C00C93E10 /* MediumRamp.mm */; };
+		A720F7781637FAA800C93E10 /* LongRamp.mm in Sources */ = {isa = PBXBuildFile; fileRef = A720F7771637FAA700C93E10 /* LongRamp.mm */; };
+		A720F77B1637FC2700C93E10 /* PhysicsBlock.mm in Sources */ = {isa = PBXBuildFile; fileRef = A720F77A1637FC2600C93E10 /* PhysicsBlock.mm */; };
+		A720F77E1637FD0D00C93E10 /* PhysicsSmallWedge.mm in Sources */ = {isa = PBXBuildFile; fileRef = A720F77D1637FD0C00C93E10 /* PhysicsSmallWedge.mm */; };
+		A720F78316380BFF00C93E10 /* PhysicsLongWedge.mm in Sources */ = {isa = PBXBuildFile; fileRef = A720F7801638096100C93E10 /* PhysicsLongWedge.mm */; };
+		A720F78416380C0600C93E10 /* PhysicsMediumWedge.mm in Sources */ = {isa = PBXBuildFile; fileRef = A720F7821638096400C93E10 /* PhysicsMediumWedge.mm */; };
+		A720F795163815AA00C93E10 /* crystal-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = A720F785163815AA00C93E10 /* crystal-hd.png */; };
+		A720F796163815AA00C93E10 /* crystal.png in Resources */ = {isa = PBXBuildFile; fileRef = A720F786163815AA00C93E10 /* crystal.png */; };
+		A720F797163815AA00C93E10 /* inverto-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = A720F787163815AA00C93E10 /* inverto-hd.png */; };
+		A720F798163815AA00C93E10 /* inverto.png in Resources */ = {isa = PBXBuildFile; fileRef = A720F788163815AA00C93E10 /* inverto.png */; };
+		A720F799163815AA00C93E10 /* ramp-long-1-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = A720F789163815AA00C93E10 /* ramp-long-1-hd.png */; };
+		A720F79A163815AA00C93E10 /* ramp-long-1.png in Resources */ = {isa = PBXBuildFile; fileRef = A720F78A163815AA00C93E10 /* ramp-long-1.png */; };
+		A720F79B163815AA00C93E10 /* ramp-long-3-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = A720F78B163815AA00C93E10 /* ramp-long-3-hd.png */; };
+		A720F79C163815AA00C93E10 /* ramp-long-3.png in Resources */ = {isa = PBXBuildFile; fileRef = A720F78C163815AA00C93E10 /* ramp-long-3.png */; };
+		A720F79D163815AA00C93E10 /* ramp-medium-1-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = A720F78D163815AA00C93E10 /* ramp-medium-1-hd.png */; };
+		A720F79E163815AA00C93E10 /* ramp-medium-1.png in Resources */ = {isa = PBXBuildFile; fileRef = A720F78E163815AA00C93E10 /* ramp-medium-1.png */; };
+		A720F79F163815AA00C93E10 /* ramp-medium-3-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = A720F78F163815AA00C93E10 /* ramp-medium-3-hd.png */; };
+		A720F7A0163815AA00C93E10 /* ramp-medium-3.png in Resources */ = {isa = PBXBuildFile; fileRef = A720F790163815AA00C93E10 /* ramp-medium-3.png */; };
+		A720F7A1163815AA00C93E10 /* ramp-short-3-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = A720F791163815AA00C93E10 /* ramp-short-3-hd.png */; };
+		A720F7A2163815AA00C93E10 /* ramp-short-3.png in Resources */ = {isa = PBXBuildFile; fileRef = A720F792163815AA00C93E10 /* ramp-short-3.png */; };
+		A720F7A3163815AA00C93E10 /* ramp-short-1-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = A720F793163815AA00C93E10 /* ramp-short-1-hd.png */; };
+		A720F7A4163815AA00C93E10 /* ramp-short-1.png in Resources */ = {isa = PBXBuildFile; fileRef = A720F794163815AA00C93E10 /* ramp-short-1.png */; };
+		A720F7A6163815B300C93E10 /* background-cave-1.png in Resources */ = {isa = PBXBuildFile; fileRef = A720F7A5163815B300C93E10 /* background-cave-1.png */; };
 		A727BECC1636BAB800049B52 /* level1.xml in Resources */ = {isa = PBXBuildFile; fileRef = A727BEC81636BAB800049B52 /* level1.xml */; };
 		A727BECD1636BAB800049B52 /* block-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = A727BECA1636BAB800049B52 /* block-hd.png */; };
 		A727BECE1636BAB800049B52 /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = A727BECB1636BAB800049B52 /* block.png */; };
+		A740F34F1A8F6DE800CFFF1C /* Level_Level1.xml in Resources */ = {isa = PBXBuildFile; fileRef = A740F34E1A8F6DE800CFFF1C /* Level_Level1.xml */; };
 		A7413816162DABBD00059DC8 /* IntroLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = A7413815162DABBD00059DC8 /* IntroLayer.mm */; };
 		A7619A8F162DA11900840476 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7619A8E162DA11900840476 /* QuartzCore.framework */; };
 		A7619A91162DA11900840476 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7619A90162DA11900840476 /* OpenGLES.framework */; };
@@ -180,7 +208,6 @@
 		A7619CA4162DA11F00840476 /* b2Rope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A7619CA3162DA11F00840476 /* b2Rope.cpp */; };
 		A7619CAA162DA11F00840476 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7619CA9162DA11F00840476 /* main.m */; };
 		A7619CAD162DA11F00840476 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = A7619CAC162DA11F00840476 /* AppDelegate.mm */; };
-		A7619CB0162DA11F00840476 /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = A7619CAF162DA11F00840476 /* HelloWorldLayer.mm */; };
 		A7619CB6162DA11F00840476 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = A7619CB5162DA11F00840476 /* GLES-Render.mm */; };
 		A7619CBB162DA11F00840476 /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = A7619CBA162DA11F00840476 /* blocks.png */; };
 		A773E7671631A58A0018B888 /* InputComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = A773E7661631A58A0018B888 /* InputComponent.mm */; };
@@ -205,9 +232,47 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A720F7651636D38100C93E10 /* LevelBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelBuilder.h; sourceTree = "<group>"; };
+		A720F7661636D38100C93E10 /* LevelBuilder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LevelBuilder.mm; sourceTree = "<group>"; };
+		A720F7691636D3D800C93E10 /* LevelLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelLayer.h; sourceTree = "<group>"; };
+		A720F76A1636D3D800C93E10 /* LevelLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LevelLayer.mm; sourceTree = "<group>"; };
+		A720F76D1637D7F200C93E10 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		A720F76E1637D7F200C93E10 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		A720F7701637F7A400C93E10 /* ShortRamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortRamp.h; sourceTree = "<group>"; };
+		A720F7711637F7A500C93E10 /* ShortRamp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ShortRamp.mm; sourceTree = "<group>"; };
+		A720F7731637FA9C00C93E10 /* MediumRamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediumRamp.h; sourceTree = "<group>"; };
+		A720F7741637FA9C00C93E10 /* MediumRamp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MediumRamp.mm; sourceTree = "<group>"; };
+		A720F7761637FAA600C93E10 /* LongRamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LongRamp.h; sourceTree = "<group>"; };
+		A720F7771637FAA700C93E10 /* LongRamp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LongRamp.mm; sourceTree = "<group>"; };
+		A720F7791637FC2400C93E10 /* PhysicsBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicsBlock.h; sourceTree = "<group>"; };
+		A720F77A1637FC2600C93E10 /* PhysicsBlock.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PhysicsBlock.mm; sourceTree = "<group>"; };
+		A720F77C1637FD0C00C93E10 /* PhysicsSmallWedge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicsSmallWedge.h; sourceTree = "<group>"; };
+		A720F77D1637FD0C00C93E10 /* PhysicsSmallWedge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PhysicsSmallWedge.mm; sourceTree = "<group>"; };
+		A720F77F1638096000C93E10 /* PhysicsLongWedge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhysicsLongWedge.h; sourceTree = "<group>"; };
+		A720F7801638096100C93E10 /* PhysicsLongWedge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PhysicsLongWedge.mm; sourceTree = "<group>"; };
+		A720F7811638096200C93E10 /* PhysicsMediumWedge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhysicsMediumWedge.h; sourceTree = "<group>"; };
+		A720F7821638096400C93E10 /* PhysicsMediumWedge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PhysicsMediumWedge.mm; sourceTree = "<group>"; };
+		A720F785163815AA00C93E10 /* crystal-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crystal-hd.png"; sourceTree = "<group>"; };
+		A720F786163815AA00C93E10 /* crystal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crystal.png; sourceTree = "<group>"; };
+		A720F787163815AA00C93E10 /* inverto-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inverto-hd.png"; sourceTree = "<group>"; };
+		A720F788163815AA00C93E10 /* inverto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inverto.png; sourceTree = "<group>"; };
+		A720F789163815AA00C93E10 /* ramp-long-1-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ramp-long-1-hd.png"; sourceTree = "<group>"; };
+		A720F78A163815AA00C93E10 /* ramp-long-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ramp-long-1.png"; sourceTree = "<group>"; };
+		A720F78B163815AA00C93E10 /* ramp-long-3-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ramp-long-3-hd.png"; sourceTree = "<group>"; };
+		A720F78C163815AA00C93E10 /* ramp-long-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ramp-long-3.png"; sourceTree = "<group>"; };
+		A720F78D163815AA00C93E10 /* ramp-medium-1-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ramp-medium-1-hd.png"; sourceTree = "<group>"; };
+		A720F78E163815AA00C93E10 /* ramp-medium-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ramp-medium-1.png"; sourceTree = "<group>"; };
+		A720F78F163815AA00C93E10 /* ramp-medium-3-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ramp-medium-3-hd.png"; sourceTree = "<group>"; };
+		A720F790163815AA00C93E10 /* ramp-medium-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ramp-medium-3.png"; sourceTree = "<group>"; };
+		A720F791163815AA00C93E10 /* ramp-short-3-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ramp-short-3-hd.png"; sourceTree = "<group>"; };
+		A720F792163815AA00C93E10 /* ramp-short-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ramp-short-3.png"; sourceTree = "<group>"; };
+		A720F793163815AA00C93E10 /* ramp-short-1-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ramp-short-1-hd.png"; sourceTree = "<group>"; };
+		A720F794163815AA00C93E10 /* ramp-short-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ramp-short-1.png"; sourceTree = "<group>"; };
+		A720F7A5163815B300C93E10 /* background-cave-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-cave-1.png"; sourceTree = "<group>"; };
 		A727BEC81636BAB800049B52 /* level1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level1.xml; sourceTree = "<group>"; };
 		A727BECA1636BAB800049B52 /* block-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block-hd.png"; sourceTree = "<group>"; };
 		A727BECB1636BAB800049B52 /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
+		A740F34E1A8F6DE800CFFF1C /* Level_Level1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Level_Level1.xml; path = "Inverto/Resources/Assets/Inverto v1/DAME/TestLevel/Level_Level1.xml"; sourceTree = SOURCE_ROOT; };
 		A7413814162DABBD00059DC8 /* IntroLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		A7413815162DABBD00059DC8 /* IntroLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IntroLayer.mm; sourceTree = "<group>"; };
 		A7619A8A162DA11900840476 /* Inverto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inverto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -562,8 +627,6 @@
 		A7619CA9162DA11F00840476 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A7619CAB162DA11F00840476 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A7619CAC162DA11F00840476 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
-		A7619CAE162DA11F00840476 /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		A7619CAF162DA11F00840476 /* HelloWorldLayer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloWorldLayer.mm; sourceTree = "<group>"; };
 		A7619CB4162DA11F00840476 /* GLES-Render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
 		A7619CB5162DA11F00840476 /* GLES-Render.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "GLES-Render.mm"; sourceTree = "<group>"; };
 		A7619CBA162DA11F00840476 /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
@@ -623,6 +686,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A720F76C1637D7F200C93E10 /* XMLReader */ = {
+			isa = PBXGroup;
+			children = (
+				A720F76D1637D7F200C93E10 /* XMLReader.h */,
+				A720F76E1637D7F200C93E10 /* XMLReader.m */,
+			);
+			path = XMLReader;
+			sourceTree = "<group>";
+		};
 		A727BEC51636BAB800049B52 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -635,6 +707,7 @@
 		A727BEC61636BAB800049B52 /* Inverto v1 */ = {
 			isa = PBXGroup;
 			children = (
+				A720F7A5163815B300C93E10 /* background-cave-1.png */,
 				A727BEC71636BAB800049B52 /* Levels */,
 				A727BEC91636BAB800049B52 /* Sprites */,
 			);
@@ -644,6 +717,7 @@
 		A727BEC71636BAB800049B52 /* Levels */ = {
 			isa = PBXGroup;
 			children = (
+				A740F34E1A8F6DE800CFFF1C /* Level_Level1.xml */,
 				A727BEC81636BAB800049B52 /* level1.xml */,
 			);
 			path = Levels;
@@ -652,6 +726,22 @@
 		A727BEC91636BAB800049B52 /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				A720F785163815AA00C93E10 /* crystal-hd.png */,
+				A720F786163815AA00C93E10 /* crystal.png */,
+				A720F787163815AA00C93E10 /* inverto-hd.png */,
+				A720F788163815AA00C93E10 /* inverto.png */,
+				A720F789163815AA00C93E10 /* ramp-long-1-hd.png */,
+				A720F78A163815AA00C93E10 /* ramp-long-1.png */,
+				A720F78B163815AA00C93E10 /* ramp-long-3-hd.png */,
+				A720F78C163815AA00C93E10 /* ramp-long-3.png */,
+				A720F78D163815AA00C93E10 /* ramp-medium-1-hd.png */,
+				A720F78E163815AA00C93E10 /* ramp-medium-1.png */,
+				A720F78F163815AA00C93E10 /* ramp-medium-3-hd.png */,
+				A720F790163815AA00C93E10 /* ramp-medium-3.png */,
+				A720F791163815AA00C93E10 /* ramp-short-3-hd.png */,
+				A720F792163815AA00C93E10 /* ramp-short-3.png */,
+				A720F793163815AA00C93E10 /* ramp-short-1-hd.png */,
+				A720F794163815AA00C93E10 /* ramp-short-1.png */,
 				A727BECA1636BAB800049B52 /* block-hd.png */,
 				A727BECB1636BAB800049B52 /* block.png */,
 			);
@@ -697,8 +787,10 @@
 			children = (
 				A7619CAB162DA11F00840476 /* AppDelegate.h */,
 				A7619CAC162DA11F00840476 /* AppDelegate.mm */,
-				A7619CAE162DA11F00840476 /* HelloWorldLayer.h */,
-				A7619CAF162DA11F00840476 /* HelloWorldLayer.mm */,
+				A720F7691636D3D800C93E10 /* LevelLayer.h */,
+				A720F76A1636D3D800C93E10 /* LevelLayer.mm */,
+				A720F7651636D38100C93E10 /* LevelBuilder.h */,
+				A720F7661636D38100C93E10 /* LevelBuilder.mm */,
 				A7619CB4162DA11F00840476 /* GLES-Render.h */,
 				A7619CB5162DA11F00840476 /* GLES-Render.mm */,
 				A7413814162DABBD00059DC8 /* IntroLayer.h */,
@@ -713,6 +805,14 @@
 				A79A9A041632802900DA0777 /* PlayerPhysicsMover.mm */,
 				A7DAC87C163587FB003142B7 /* PhysicsComponent.h */,
 				A7DAC87F16358986003142B7 /* PhysicsComponent.mm */,
+				A720F7791637FC2400C93E10 /* PhysicsBlock.h */,
+				A720F77A1637FC2600C93E10 /* PhysicsBlock.mm */,
+				A720F77C1637FD0C00C93E10 /* PhysicsSmallWedge.h */,
+				A720F77D1637FD0C00C93E10 /* PhysicsSmallWedge.mm */,
+				A720F77F1638096000C93E10 /* PhysicsLongWedge.h */,
+				A720F7801638096100C93E10 /* PhysicsLongWedge.mm */,
+				A720F7811638096200C93E10 /* PhysicsMediumWedge.h */,
+				A720F7821638096400C93E10 /* PhysicsMediumWedge.mm */,
 				A79A9C591632DD4000DA0777 /* FairyMover.h */,
 				A79A9C5A1632DD4000DA0777 /* FairyMover.mm */,
 				A79A9C5F163311ED00DA0777 /* FollowerMover.h */,
@@ -732,6 +832,12 @@
 				A780498B162EF5C700A946C8 /* Player.mm */,
 				A7DAC879163585CB003142B7 /* Obstacle.h */,
 				A7DAC87A163585CB003142B7 /* Obstacle.mm */,
+				A720F7701637F7A400C93E10 /* ShortRamp.h */,
+				A720F7711637F7A500C93E10 /* ShortRamp.mm */,
+				A720F7731637FA9C00C93E10 /* MediumRamp.h */,
+				A720F7741637FA9C00C93E10 /* MediumRamp.mm */,
+				A720F7761637FAA600C93E10 /* LongRamp.h */,
+				A720F7771637FAA700C93E10 /* LongRamp.mm */,
 			);
 			path = Inverto;
 			sourceTree = "<group>";
@@ -767,6 +873,7 @@
 		A7619ABB162DA11900840476 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				A720F76C1637D7F200C93E10 /* XMLReader */,
 				A7619BD2162DA11C00840476 /* LICENSE_cocos2d.txt */,
 				A7619BE1162DA11C00840476 /* LICENSE_CocosDenshion.txt */,
 				A7619C13162DA11D00840476 /* LICENSE_Kazmath.txt */,
@@ -1292,6 +1399,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0450;
+				TargetAttributes = {
+					A7619A89162DA11900840476 = {
+						DevelopmentTeam = 5P5BQD928R;
+					};
+				};
 			};
 			buildConfigurationList = A7619A84162DA11900840476 /* Build configuration list for PBXProject "Inverto" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1327,6 +1439,7 @@
 				A7619AB5162DA11900840476 /* Icon.png in Resources */,
 				A7619AB7162DA11900840476 /* Icon@2x.png in Resources */,
 				A7619ABA162DA11900840476 /* iTunesArtwork in Resources */,
+				A740F34F1A8F6DE800CFFF1C /* Level_Level1.xml in Resources */,
 				A7619BF8162DA11D00840476 /* ChangeLog in Resources */,
 				A7619CBB162DA11F00840476 /* blocks.png in Resources */,
 				A7DAC87216340C4D003142B7 /* dude.png in Resources */,
@@ -1338,6 +1451,23 @@
 				A727BECC1636BAB800049B52 /* level1.xml in Resources */,
 				A727BECD1636BAB800049B52 /* block-hd.png in Resources */,
 				A727BECE1636BAB800049B52 /* block.png in Resources */,
+				A720F795163815AA00C93E10 /* crystal-hd.png in Resources */,
+				A720F796163815AA00C93E10 /* crystal.png in Resources */,
+				A720F797163815AA00C93E10 /* inverto-hd.png in Resources */,
+				A720F798163815AA00C93E10 /* inverto.png in Resources */,
+				A720F799163815AA00C93E10 /* ramp-long-1-hd.png in Resources */,
+				A720F79A163815AA00C93E10 /* ramp-long-1.png in Resources */,
+				A720F79B163815AA00C93E10 /* ramp-long-3-hd.png in Resources */,
+				A720F79C163815AA00C93E10 /* ramp-long-3.png in Resources */,
+				A720F79D163815AA00C93E10 /* ramp-medium-1-hd.png in Resources */,
+				A720F79E163815AA00C93E10 /* ramp-medium-1.png in Resources */,
+				A720F79F163815AA00C93E10 /* ramp-medium-3-hd.png in Resources */,
+				A720F7A0163815AA00C93E10 /* ramp-medium-3.png in Resources */,
+				A720F7A1163815AA00C93E10 /* ramp-short-3-hd.png in Resources */,
+				A720F7A2163815AA00C93E10 /* ramp-short-3.png in Resources */,
+				A720F7A3163815AA00C93E10 /* ramp-short-1-hd.png in Resources */,
+				A720F7A4163815AA00C93E10 /* ramp-short-1.png in Resources */,
+				A720F7A6163815B300C93E10 /* background-cave-1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1348,6 +1478,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A720F78416380C0600C93E10 /* PhysicsMediumWedge.mm in Sources */,
+				A720F78316380BFF00C93E10 /* PhysicsLongWedge.mm in Sources */,
 				A7619ABF162DA11900840476 /* CCAction.m in Sources */,
 				A7619AC2162DA11900840476 /* CCActionCamera.m in Sources */,
 				A7619AC5162DA11900840476 /* CCActionCatmullRom.m in Sources */,
@@ -1495,7 +1627,6 @@
 				A7619CA4162DA11F00840476 /* b2Rope.cpp in Sources */,
 				A7619CAA162DA11F00840476 /* main.m in Sources */,
 				A7619CAD162DA11F00840476 /* AppDelegate.mm in Sources */,
-				A7619CB0162DA11F00840476 /* HelloWorldLayer.mm in Sources */,
 				A7619CB6162DA11F00840476 /* GLES-Render.mm in Sources */,
 				A7413816162DABBD00059DC8 /* IntroLayer.mm in Sources */,
 				A780498C162EF5C800A946C8 /* Player.mm in Sources */,
@@ -1510,6 +1641,14 @@
 				A7DAC876163417C6003142B7 /* CourierComponent.m in Sources */,
 				A7DAC87B163585CC003142B7 /* Obstacle.mm in Sources */,
 				A7DAC88016358987003142B7 /* PhysicsComponent.mm in Sources */,
+				A720F7671636D38100C93E10 /* LevelBuilder.mm in Sources */,
+				A720F76B1636D3D800C93E10 /* LevelLayer.mm in Sources */,
+				A720F76F1637D7F200C93E10 /* XMLReader.m in Sources */,
+				A720F7721637F7A500C93E10 /* ShortRamp.mm in Sources */,
+				A720F7751637FA9D00C93E10 /* MediumRamp.mm in Sources */,
+				A720F7781637FAA800C93E10 /* LongRamp.mm in Sources */,
+				A720F77B1637FC2700C93E10 /* PhysicsBlock.mm in Sources */,
+				A720F77E1637FD0D00C93E10 /* PhysicsSmallWedge.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1560,6 +1699,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1571,6 +1712,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "\"Inverto/libs\"";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1580,6 +1722,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Inverto/Prefix.pch;
@@ -1590,6 +1734,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "\"Inverto/libs\"";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;

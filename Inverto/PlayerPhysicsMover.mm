@@ -10,7 +10,7 @@
 
 // Needed for level representation
 // TODO: Don't depend on HelloWorldLayer!
-#import "HelloWorldLayer.h"
+#import "LevelLayer.h"
 
 // TODO: Get PTM_RATIO elsewhere
 //#define PTM_RATIO 32.0
@@ -21,17 +21,16 @@
 {
     self.go = go;
     
-    b2World* pWorld = ((HelloWorldLayer*)self.go.level).pWorld;
+    b2World* pWorld = ((LevelLayer*)self.go.level).pWorld;
     
-    CGSize s = [CCDirector sharedDirector].winSize;
-    
-    NSLog(@"Box placed at (%f, %f)", s.width / (2*PTM_RATIO), 2*s.height / (3*PTM_RATIO));
+    NSLog(@"PlayerPhysicsMover: (%f, %f)", self.go.position.x, self.go.position.y);
     
     // Define the dynamic body.
 	//Set up a 1m squared box in the physics world
 	b2BodyDef bodyDef;
 	bodyDef.type = b2_dynamicBody;
-	bodyDef.position.Set(s.width / (2*PTM_RATIO), s.height / (2*PTM_RATIO));
+	bodyDef.position.Set(self.go.position.x / PTM_RATIO,
+                         self.go.position.y / PTM_RATIO);
 //    bodyDef.linearDamping = .5f;
     bodyDef.angularDamping = 1.f;
 //    bodyDef.fixedRotation = YES;

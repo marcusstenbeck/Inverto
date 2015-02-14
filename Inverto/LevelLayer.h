@@ -1,24 +1,15 @@
 //
-//  HelloWorldLayer.h
+//  LevelLayer.h
 //  Inverto
 //
-//  Created by Marcus Stenbeck on 2012-10-16.
-//  Copyright __MyCompanyName__ 2012. All rights reserved.
+//  Created by Marcus Stenbeck on 2012-10-23.
+//  Copyright 2012 __MyCompanyName__. All rights reserved.
 //
-
-
-#import <GameKit/GameKit.h>
 
 // When you import this file, you import all the cocos2d classes
 #import "cocos2d.h"
 #import "Box2D.h"
 #import "GLES-Render.h"
-
-// We use the Player class
-#import "Player.h"
-#import "Fairy.h"
-#import "FairyHelper.h"
-#import "Obstacle.h"
 
 //Pixel to metres ratio. Box2D uses metres as the unit for measurement.
 //This ratio defines how many pixels correspond to 1 Box2D "metre"
@@ -30,25 +21,23 @@
 #define SCREEN_WIDTH 480
 #define SCREEN_HEIGHT 320
 
-// HelloWorldLayer
-@interface HelloWorldLayer : CCLayer
+// We need to know about the GameObject protocol
+#import "GameObject.h"
+
+@interface LevelLayer : CCLayer
 {
-	Player* _player;
-    Fairy* _fairy;
-    FairyHelper* _fairyHelper;
-    Fairy* _cameraTarget;
-    Obstacle *_obstacle;
-    
     CCLabelTTF *_invertedLabel;
     BOOL _inverted;
     
     GLESDebugDraw *m_debugDraw;		// strong ref
 }
 
-@property (assign) b2World* pWorld;
+
+@property (assign) b2World *pWorld;
+@property (strong) NSArray *gameObjects;
 
 // returns a CCScene that contains the HelloWorldLayer as the only child
-+(CCScene *) scene;
+-(CCScene *) scene;
 
 -(void)receive:(NSString *)message from:(id)sender;
 

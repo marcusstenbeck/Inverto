@@ -1,17 +1,17 @@
 //
-//  Obstacle.h
+//  MediumRamp.h
 //  Inverto
 //
-//  Created by Marcus Stenbeck on 2012-10-22.
+//  Created by Marcus Stenbeck on 2012-10-24.
 //  Copyright 2012 __MyCompanyName__. All rights reserved.
 //
 
 #import "GameObject.h"
 #import "GraphicsComponent.h"
-#import "PhysicsBlock.h"
+#import "PhysicsMediumWedge.h"
 
 
-@interface Obstacle : CCNode<GameObject>
+@interface MediumRamp : CCNode<GameObject>
 
 @property (assign) GraphicsComponent* graphicsComponent;
 @property (assign) PhysicsComponent* physicsComponent;

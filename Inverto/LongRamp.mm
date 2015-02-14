@@ -1,14 +1,15 @@
 //
-//  Obstacle.m
+//  LongRamp.m
 //  Inverto
 //
-//  Created by Marcus Stenbeck on 2012-10-22.
+//  Created by Marcus Stenbeck on 2012-10-24.
 //  Copyright 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "Obstacle.h"
+#import "LongRamp.h"
 
-@implementation Obstacle
+
+@implementation LongRamp
 
 @synthesize level = _level;
 
@@ -22,10 +23,13 @@
     self.level = level;
     
     self.graphicsComponent = [[GraphicsComponent alloc] initWithGameObject:self];
-    self.physicsComponent = [[PhysicsBlock alloc] initWithGameObject:self];
+    self.physicsComponent = [[PhysicsLongWedge alloc] initWithGameObject:self];
     
     // Use rock as image
-    self.graphicsComponent.sprite = [CCSprite spriteWithFile:@"block.png"];
+    if(self.rotation == 180 || self.rotation == -180)
+        self.graphicsComponent.sprite = [CCSprite spriteWithFile:@"ramp-long-3.png"];
+    else
+        self.graphicsComponent.sprite = [CCSprite spriteWithFile:@"ramp-long-1.png"];
     
     return self;
 }

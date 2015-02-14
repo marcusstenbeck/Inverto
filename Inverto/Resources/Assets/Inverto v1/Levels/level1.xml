@@ -1,11 +1,4 @@
 <Scene>
-	<NormalProperty>
-		<WorldSizeX>1000<WorldSizeX>
-		<WorldSizeY>1000<WorldSizeY>
-		<MaxLayers>5<MaxLayers>
-	</NormalProperty>
-	<SceneProperty>
-	</SceneProperty>
 	<Sprite>
 		<x>128</x>
 		<y>256</y>
@@ -493,7 +486,7 @@
 		<image>block.png</image>
 	</Sprite>
 	<Sprite>
-		<x>272</x>
+		<x baby="comeon">272</x>
 		<y>144</y>
 		<scaleX>-1.00</scaleX>
 		<image>long-wedge.png</image>
