@@ -30,5 +30,7 @@
 		<sprite class="Avatar" name="Block" x="112.00" y="272.00" angle="0.00" flip="false" xScale="1.00" yScale="1.00" />
 		<sprite class="Avatar" name="Block" x="80.00" y="272.00" angle="0.00" flip="false" xScale="1.00" yScale="1.00" />
 		<sprite class="Avatar" name="ShortWedge" x="528.00" y="368.00" angle="0.00" flip="false" xScale="1.00" yScale="1.00" />
+		<sprite class="Avatar" name="ShortWedge" x="528.00" y="400.00" angle="180.00" flip="false" xScale="1.00" yScale="1.00" />
+		<sprite class="Avatar" name="Crystal" x="1136.00" y="208.00" angle="0.00" flip="false" xScale="1.00" yScale="1.00" />
 	</layer>
 </level>

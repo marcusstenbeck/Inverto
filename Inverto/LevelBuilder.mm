@@ -17,6 +17,7 @@
 #import "ShortRamp.h"
 #import "MediumRamp.h"
 #import "LongRamp.h"
+#import "Crystal.h"
 
 // TODO: Use NSXMLParser to load level from data file!
 
@@ -153,6 +154,17 @@
             NSLog(@"... add Player sprite to layer...");
             [level addChild:_player.graphicsComponent.sprite];
             NSLog(@"... Player code end.");
+        }
+        else if([name isEqualToString:@"Crystal"])
+        {
+            Crystal *o = [Crystal alloc];
+            o.position = ccp([x intValue] / 2, -[y intValue] / 2);
+            o.rotation = [rotation floatValue];
+            o.scaleX = [scaleX floatValue];
+            [o initWithLevel:level];
+            [level addChild:o.graphicsComponent.sprite];
+            
+            level.gameObjects = [level.gameObjects arrayByAddingObject:o];
         }
         
         

@@ -61,7 +61,7 @@
 
 -(void) makeTransition:(ccTime)dt
 {
-    LevelLayer *level = [LevelBuilder createLevel:@"level1.xml"];
+    LevelLayer *level = [LevelBuilder createLevel:@"Level_.xml"];
     
 	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:[level scene] withColor:ccWHITE]];
 }

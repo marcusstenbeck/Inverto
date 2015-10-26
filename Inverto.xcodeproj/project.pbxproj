@@ -10,7 +10,7 @@
 		A720F7671636D38100C93E10 /* LevelBuilder.mm in Sources */ = {isa = PBXBuildFile; fileRef = A720F7661636D38100C93E10 /* LevelBuilder.mm */; };
 		A720F76B1636D3D800C93E10 /* LevelLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = A720F76A1636D3D800C93E10 /* LevelLayer.mm */; };
 		A720F76F1637D7F200C93E10 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = A720F76E1637D7F200C93E10 /* XMLReader.m */; };
-		A720F7721637F7A500C93E10 /* ShortRamp.mm in Sources */ = {isa = PBXBuildFile; fileRef = A720F7711637F7A500C93E10 /* ShortRamp.mm */; };
+		A720F7721637F7A500C93E10 /* Crystal.mm in Sources */ = {isa = PBXBuildFile; fileRef = A720F7711637F7A500C93E10 /* Crystal.mm */; };
 		A720F7751637FA9D00C93E10 /* MediumRamp.mm in Sources */ = {isa = PBXBuildFile; fileRef = A720F7741637FA9C00C93E10 /* MediumRamp.mm */; };
 		A720F7781637FAA800C93E10 /* LongRamp.mm in Sources */ = {isa = PBXBuildFile; fileRef = A720F7771637FAA700C93E10 /* LongRamp.mm */; };
 		A720F77B1637FC2700C93E10 /* PhysicsBlock.mm in Sources */ = {isa = PBXBuildFile; fileRef = A720F77A1637FC2600C93E10 /* PhysicsBlock.mm */; };
@@ -37,8 +37,9 @@
 		A727BECC1636BAB800049B52 /* level1.xml in Resources */ = {isa = PBXBuildFile; fileRef = A727BEC81636BAB800049B52 /* level1.xml */; };
 		A727BECD1636BAB800049B52 /* block-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = A727BECA1636BAB800049B52 /* block-hd.png */; };
 		A727BECE1636BAB800049B52 /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = A727BECB1636BAB800049B52 /* block.png */; };
-		A740F34F1A8F6DE800CFFF1C /* Level_Level1.xml in Resources */ = {isa = PBXBuildFile; fileRef = A740F34E1A8F6DE800CFFF1C /* Level_Level1.xml */; };
 		A7413816162DABBD00059DC8 /* IntroLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = A7413815162DABBD00059DC8 /* IntroLayer.mm */; };
+		A74F23011BD8B1E500BD4ABC /* Level_Level1.xml in Resources */ = {isa = PBXBuildFile; fileRef = A74F23001BD8B1E500BD4ABC /* Level_Level1.xml */; settings = {ASSET_TAGS = (); }; };
+		A74F23041BD8B2D400BD4ABC /* ShortRamp.mm in Sources */ = {isa = PBXBuildFile; fileRef = A74F23031BD8B2D400BD4ABC /* ShortRamp.mm */; settings = {ASSET_TAGS = (); }; };
 		A7619A8F162DA11900840476 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7619A8E162DA11900840476 /* QuartzCore.framework */; };
 		A7619A91162DA11900840476 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7619A90162DA11900840476 /* OpenGLES.framework */; };
 		A7619A93162DA11900840476 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7619A92162DA11900840476 /* OpenAL.framework */; };
@@ -239,7 +240,7 @@
 		A720F76D1637D7F200C93E10 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
 		A720F76E1637D7F200C93E10 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
 		A720F7701637F7A400C93E10 /* ShortRamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortRamp.h; sourceTree = "<group>"; };
-		A720F7711637F7A500C93E10 /* ShortRamp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ShortRamp.mm; sourceTree = "<group>"; };
+		A720F7711637F7A500C93E10 /* Crystal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Crystal.mm; sourceTree = "<group>"; };
 		A720F7731637FA9C00C93E10 /* MediumRamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediumRamp.h; sourceTree = "<group>"; };
 		A720F7741637FA9C00C93E10 /* MediumRamp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MediumRamp.mm; sourceTree = "<group>"; };
 		A720F7761637FAA600C93E10 /* LongRamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LongRamp.h; sourceTree = "<group>"; };
@@ -272,9 +273,11 @@
 		A727BEC81636BAB800049B52 /* level1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level1.xml; sourceTree = "<group>"; };
 		A727BECA1636BAB800049B52 /* block-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block-hd.png"; sourceTree = "<group>"; };
 		A727BECB1636BAB800049B52 /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
-		A740F34E1A8F6DE800CFFF1C /* Level_Level1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Level_Level1.xml; path = "Inverto/Resources/Assets/Inverto v1/DAME/TestLevel/Level_Level1.xml"; sourceTree = SOURCE_ROOT; };
 		A7413814162DABBD00059DC8 /* IntroLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		A7413815162DABBD00059DC8 /* IntroLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IntroLayer.mm; sourceTree = "<group>"; };
+		A74F23001BD8B1E500BD4ABC /* Level_Level1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Level_Level1.xml; path = "Inverto/Resources/Assets/Inverto v1/DAME/TestLevel/TestLevel/Level_Level1.xml"; sourceTree = SOURCE_ROOT; };
+		A74F23021BD8B2C700BD4ABC /* Crystal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crystal.h; sourceTree = "<group>"; };
+		A74F23031BD8B2D400BD4ABC /* ShortRamp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ShortRamp.mm; sourceTree = "<group>"; };
 		A7619A8A162DA11900840476 /* Inverto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inverto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7619A8E162DA11900840476 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A7619A90162DA11900840476 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -717,7 +720,7 @@
 		A727BEC71636BAB800049B52 /* Levels */ = {
 			isa = PBXGroup;
 			children = (
-				A740F34E1A8F6DE800CFFF1C /* Level_Level1.xml */,
+				A74F23001BD8B1E500BD4ABC /* Level_Level1.xml */,
 				A727BEC81636BAB800049B52 /* level1.xml */,
 			);
 			path = Levels;
@@ -833,7 +836,9 @@
 				A7DAC879163585CB003142B7 /* Obstacle.h */,
 				A7DAC87A163585CB003142B7 /* Obstacle.mm */,
 				A720F7701637F7A400C93E10 /* ShortRamp.h */,
-				A720F7711637F7A500C93E10 /* ShortRamp.mm */,
+				A74F23021BD8B2C700BD4ABC /* Crystal.h */,
+				A720F7711637F7A500C93E10 /* Crystal.mm */,
+				A74F23031BD8B2D400BD4ABC /* ShortRamp.mm */,
 				A720F7731637FA9C00C93E10 /* MediumRamp.h */,
 				A720F7741637FA9C00C93E10 /* MediumRamp.mm */,
 				A720F7761637FAA600C93E10 /* LongRamp.h */,
@@ -1439,7 +1444,7 @@
 				A7619AB5162DA11900840476 /* Icon.png in Resources */,
 				A7619AB7162DA11900840476 /* Icon@2x.png in Resources */,
 				A7619ABA162DA11900840476 /* iTunesArtwork in Resources */,
-				A740F34F1A8F6DE800CFFF1C /* Level_Level1.xml in Resources */,
+				A74F23011BD8B1E500BD4ABC /* Level_Level1.xml in Resources */,
 				A7619BF8162DA11D00840476 /* ChangeLog in Resources */,
 				A7619CBB162DA11F00840476 /* blocks.png in Resources */,
 				A7DAC87216340C4D003142B7 /* dude.png in Resources */,
@@ -1526,6 +1531,7 @@
 				A7619B50162DA11B00840476 /* CCShaderCache.m in Sources */,
 				A7619B53162DA11B00840476 /* ccShaders.m in Sources */,
 				A7619B56162DA11B00840476 /* CCSprite.m in Sources */,
+				A74F23041BD8B2D400BD4ABC /* ShortRamp.mm in Sources */,
 				A7619B59162DA11B00840476 /* CCSpriteBatchNode.m in Sources */,
 				A7619B5C162DA11B00840476 /* CCSpriteFrame.m in Sources */,
 				A7619B5F162DA11B00840476 /* CCSpriteFrameCache.m in Sources */,
@@ -1644,7 +1650,7 @@
 				A720F7671636D38100C93E10 /* LevelBuilder.mm in Sources */,
 				A720F76B1636D3D800C93E10 /* LevelLayer.mm in Sources */,
 				A720F76F1637D7F200C93E10 /* XMLReader.m in Sources */,
-				A720F7721637F7A500C93E10 /* ShortRamp.mm in Sources */,
+				A720F7721637F7A500C93E10 /* Crystal.mm in Sources */,
 				A720F7751637FA9D00C93E10 /* MediumRamp.mm in Sources */,
 				A720F7781637FAA800C93E10 /* LongRamp.mm in Sources */,
 				A720F77B1637FC2700C93E10 /* PhysicsBlock.mm in Sources */,
@@ -1699,20 +1705,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Marcus Stenbeck (L378E545VU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marcus Stenbeck (L378E545VU)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Inverto/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"Inverto/libs/kazmath/include\"";
 				INFOPLIST_FILE = Inverto/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "\"Inverto/libs\"";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1722,19 +1730,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Marcus Stenbeck (L378E545VU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marcus Stenbeck (L378E545VU)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Inverto/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"Inverto/libs/kazmath/include\"";
 				INFOPLIST_FILE = Inverto/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "\"Inverto/libs\"";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
